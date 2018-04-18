@@ -17,19 +17,19 @@
 
  	<!-- CSS
    ================================================== -->
-   <link rel="stylesheet" href="css/base.css">
-   <link rel="stylesheet" href="css/vendor.css">  
-   <link rel="stylesheet" href="css/main.css">  
+   <link rel="stylesheet" href="../static/css/base.css">
+   <link rel="stylesheet" href="../static/css/vendor.css">  
+   <link rel="stylesheet" href="../static/css/main.css">  
 
    <!-- script
    ================================================== -->
-	<script src="js/modernizr.js"></script>
-	<script src="js/pace.min.js"></script>
+	<script src="../static/js/modernizr.js"></script>
+	<script src="../static/js/pace.min.js"></script>
 
    <!-- favicons
 	================================================== -->
-	<link rel="shortcut icon" href="masque.png" type="image/x-icon">
-	<link rel="icon" href="masque.png" type="image/x-icon">
+	<link rel="shortcut icon" href="../static/masque.png" type="image/x-icon">
+	<link rel="icon" href="../static/masque.png" type="image/x-icon">
 
 </head>
 
@@ -85,12 +85,29 @@
 					        
 					        
 				  			<div class="more animate-intro">
-				  				<form action="/post" method="post">
-				  				<a class="smoothscroll button stroke" >
+				  				<!-- <form action="/post" method="post"> -->
+<!-- 				  				<a class="smoothscroll button stroke" >
 				  					<input type=file name=file>
-				  				</a>
-				  				<input type=submit value=Upload>
-				  				</form>
+				  				</a> -->
+				  				
+								<form method="post" enctype="multipart/form-data" >
+								  <div>
+								    <label color = "blue" for="image_uploads">Choose images to upload (PNG, JPG)</label>
+								    <input color:#630; background:#ffc none; font-size:160%; font-family:Courier,monospace; font-weight:bold type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" value = "Upload" >
+								  </div>
+								  <div class="preview">
+								    <!-- <p>No files currently selected for upload</p> -->
+								  </div>
+								  <div>
+								    <input type="submit" value = "Submit"><!-- Submit</button> -->
+								  </div>
+								</form>
+
+
+
+
+				  				<!-- <input type=submit value=Upload> -->
+				  				<!-- </form> -->
 				  			</div>							
 
 			  		</div> <!-- end col-twelve --> 
@@ -249,9 +266,9 @@
    			<div id="folio-wrap" class="bricks-wrapper">					
 
    				<div class="brick folio-item">
-	               <div class="item-wrap animate-this" data-src="images/portfolio/gallery/g-shutterbug.jpg" data-sub-html="#01" > 	
+	               <div class="item-wrap animate-this" data-src="../static/images/portfolio/gallery/g-shutterbug.jpg" data-sub-html="#01" > 	
 	                  <a href="#" class="overlay">
-	                  	<img src="images/portfolio/shutterbug.jpg" alt="Skaterboy">	                     
+	                  	<img src="../static/images/portfolio/shutterbug.jpg" alt="Skaterboy">	                     
 	                     <div class="item-text">
 	                     	<span class="folio-types">
 		     					      Web Development
@@ -271,9 +288,9 @@
 	        		</div> <!-- end folio-item -->
 
 	        		<div class="brick folio-item">
-	               <div class="item-wrap animate-this" data-src="images/portfolio/gallery/g-yellowwall.jpg" data-sub-html="#02"> 	
+	               <div class="item-wrap animate-this" data-src="../static/images/portfolio/gallery/g-yellowwall.jpg" data-sub-html="#02"> 	
 	                  <a href="#" class="overlay">
-	                  	<img src="images/portfolio/yellowwall.jpg" alt="Shutterbug">	                     
+	                  	<img src="../static/images/portfolio/yellowwall.jpg" alt="Shutterbug">	                     
 	                     <div class="item-text">
 	                     	<span class="folio-types">
 		     					      Marketing
@@ -293,9 +310,9 @@
 	        		</div> <!-- end folio-item -->
 
 	        		<div class="brick folio-item">
-	               <div class="item-wrap animate-this" data-src="images/portfolio/gallery/g-architecture.jpg" data-sub-html="#03" >   	
+	               <div class="item-wrap animate-this" data-src="../static/images/portfolio/gallery/g-architecture.jpg" data-sub-html="#03" >   	
 	                  <a href="#" class="overlay">
-	                  	<img src="images/portfolio/architecture.jpg" alt="Explore">	                     
+	                  	<img src="../static/images/portfolio/architecture.jpg" alt="Explore">	                     
 	                     <div class="item-text">	                     		     					    
 		     					   <span class="folio-types">
 		     					      Web Design
@@ -315,9 +332,9 @@
 	        		</div> <!-- end folio-item -->
 
 					<div class="brick folio-item">
-	               <div class="item-wrap animate-this"  data-src="images/portfolio/gallery/g-minimalismo.jpg"  data-sub-html="#04" >
+	               <div class="item-wrap animate-this"  data-src="../static/images/portfolio/gallery/g-minimalismo.jpg"  data-sub-html="#04" >
 	                  <a href="#" class="overlay">
-	                  	<img src="images/portfolio/minimalismo.jpg" alt="Minimalismo">	                     
+	                  	<img src="../static/images/portfolio/minimalismo.jpg" alt="Minimalismo">	                     
 	                     <div class="item-text">	     					    
 		     					   <span class="folio-types">
 		     					      Web Design
@@ -337,9 +354,9 @@
 	        		</div> <!-- end folio-item -->
 
 					<div class="brick folio-item">
-	               <div class="item-wrap animate-this"  data-src="images/portfolio/gallery/g-skaterboy.jpg"  data-sub-html="#05" >  	
+	               <div class="item-wrap animate-this"  data-src="../static/images/portfolio/gallery/g-skaterboy.jpg"  data-sub-html="#05" >  	
 	                  <a href="#" class="overlay">
-	                  	<img src="images/portfolio/skaterboy.jpg" alt="Bicycle">	                     
+	                  	<img src="../static/images/portfolio/skaterboy.jpg" alt="Bicycle">	                     
 	                     <div class="item-text">	     					    
 		     					   <span class="folio-types">
 		     					      Branding
@@ -359,9 +376,9 @@
 	        		</div> <!-- end folio-item -->
 	           
 					<div class="brick folio-item">
-	               <div class="item-wrap animate-this"  data-src="images/portfolio/gallery/g-salad.jpg"  data-sub-html="#06">     	
+	               <div class="item-wrap animate-this"  data-src="../static/images/portfolio/gallery/g-salad.jpg"  data-sub-html="#06">     	
 	                  <a href="#" class="overlay">
-	                  	<img src="images/portfolio/salad.jpg" alt="Salad">	                     
+	                  	<img src="../static/images/portfolio/salad.jpg" alt="Salad">	                     
 	                     <div class="item-text">	     					    
 		     					   <span class="folio-types">
 		     					      Branding
@@ -411,7 +428,7 @@
                   </p> 
 
                   <div class="testimonial-author">
-                    	<img src="images/avatars/user-02.jpg" alt="Author image">
+                    	<img src="../static/images/avatars/user-02.jpg" alt="Author image">
                     	<div class="author-info">
                     		Steve Jobs
                     		<span class="position">CEO, Apple.</span>
@@ -427,7 +444,7 @@
                   </p>
 
                	<div class="testimonial-author">
-                    	<img src="images/avatars/user-03.jpg" alt="Author image">
+                    	<img src="../static/images/avatars/user-03.jpg" alt="Author image">
                     	<div class="author-info">
                     		John Doe
                     		<span>CEO, ABC Corp.</span>
@@ -534,9 +551,9 @@
 
    <!-- Java Script
    ================================================== --> 
-   <script src="js/jquery-2.1.3.min.js"></script>
-   <script src="js/plugins.js"></script>
-   <script src="js/main.js"></script>
+   <script src="../static/js/jquery-2.1.3.min.js"></script>
+   <script src="../static/js/plugins.js"></script>
+   <script src="../static/js/main.js"></script>
 
 </body>
 
