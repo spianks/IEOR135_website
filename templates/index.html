@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
@@ -90,10 +91,13 @@
 				  					<input type=file name=file>
 				  				</a> -->
 				  				
-								<form method="post" enctype="multipart/form-data" >
+								<form action="/post" method="post" enctype="multipart/form-data" >
 								  <div>
 								    <label color = "blue" for="image_uploads">Choose images to upload (PNG, JPG)</label>
+								    <label color = "white">Filename must have either the words "Image" or "Trimap"</label>
 								    <input color:#630; background:#ffc none; font-size:160%; font-family:Courier,monospace; font-weight:bold type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" value = "Upload" >
+								  </div>
+								  <div>
 								  </div>
 								  <div class="preview">
 								    <!-- <p>No files currently selected for upload</p> -->
