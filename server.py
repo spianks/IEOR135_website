@@ -29,7 +29,8 @@ def post():
                             image=os.path.join('../static/images/uploads', file.filename),
                             trimap=os.path.join('../static/images/', "trimap.jpg"),
                             alpha=os.path.join('../static/images/', "alpha.jpg"),
-                            alphabackground=os.path.join('../static/images/', "example.jpg"))
+                            alphabackground=os.path.join('../static/images/', "example.jpg"),
+                            alphabackgroundtwo=os.path.join('../static/images/', "example2.jpg"))
 
 
 
