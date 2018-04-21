@@ -22,14 +22,14 @@ def main():
 def post():
     ### run ML shit here
     file = request.files['image_uploads']
-
-    print(file)
     f = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
-    if "Image" in file.filename:
-        print("OLAOLALAAOALALAOAALAOALAOAOAALALAOAOLALAAOALAOLAALOAO")
     # add your custom code to check that the uploaded file is a valid image and not a malicious file (out-of-scope for this post)
     file.save(f)
-    return render_template('post_result.html', image=os.path.join('../static/images/uploads', file.filename))
+    return render_template('post_result.html',
+                            image=os.path.join('../static/images/uploads', file.filename),
+                            trimap=os.path.join('../static/images/', "trimap.jpg"),
+                            alpha=os.path.join('../static/images/', "alpha.jpg"),
+                            alphabackground=os.path.join('../static/images/', "example.jpg"))
 
 
 
